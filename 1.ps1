@@ -3,7 +3,7 @@ $ErrorActionPreference = "Stop"
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 
-$DownloadURL = 'https://raw.githubusercontent.com/kunhtml/change-offfice/refs/heads/main/1.cmd'
+$DownloadURL = 'https://raw.githubusercontent.com/kunhtml/change-offfice/refs/heads/main/changeofffice.cmd'
 
 $rand = Get-Random -Maximum 99999999
 $isAdmin = [bool]([Security.Principal.WindowsIdentity]::GetCurrent().Groups -match 'S-1-5-32-544')
